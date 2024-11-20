@@ -1,0 +1,7 @@
+
+train: C:\Users\utkar\OneDrive\Desktop\Qual-230445\data\train\images
+val: C:\Users\utkar\OneDrive\Desktop\Qual-230445\data\valid\images
+
+#classes
+nc: 9
+names: ['Animal', 'Auto', 'Bus', 'Car', 'Carts', 'Person', 'Rikshaw', 'Truck', 'Two-wheeler']
