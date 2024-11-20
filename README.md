@@ -11,7 +11,7 @@ This project is designed for vehicle surveillance using object detection algorit
 - [Model Training](#model-training)
 - [Evaluation](#evaluation)
 - [Features](#features)
-- [Contributing](#contributing)
+
 
 ## Installation
 
