@@ -35,22 +35,25 @@ pip install -r requirements.txt
 Running the Object Detection on Images
 You can run the object detection model on images to detect vehicles using the following command:
 
-bash
+```bash
 Copy code
 python detect_objects.py --input <input_image_path> --output <output_image_path>
 Running the Object Detection on Video
 To perform vehicle detection on a video feed, use the following command:
+```
 
-bash
+```bash
 Copy code
 python detect_objects.py --input <input_video_path> --output <output_video_path>
 Real-Time Surveillance
 For real-time vehicle detection using a webcam or an IP camera:
+```
 
-bash
+```bash
 Copy code
 python detect_real_time.py --camera <camera_id_or_url>
 Replace <camera_id_or_url> with the camera ID or URL (e.g., for an IP camera).
+``` 
 
 ## Data Preparation
 The model needs a dataset of images containing vehicles. The dataset should be labeled for object detection, meaning each vehicle in the image is annotated with a bounding box.
@@ -68,19 +71,19 @@ To train the object detection model, follow these steps:
 Prepare your training and validation datasets.
 Set up the configuration for training (epochs, batch size, learning rate, etc.).
 Run the training script:
-bash
+```bash
 Copy code
 python train.py --train_dir <path_to_train_data> --val_dir <path_to_val_data> --epochs <num_epochs>
 You can experiment with different pre-trained models (e.g., YOLO, Faster R-CNN, SSD) depending on your framework.
-
+```
 ## Evaluation
 After training the model, evaluate its performance on a test dataset using the following command:
 
-bash
+```bash
 Copy code
 python evaluate.py --test_dir <path_to_test_data> --weights <path_to_trained_model_weights>
 This will generate performance metrics like:
-
+```
 ## Precision
 Recall
 F1-Score
